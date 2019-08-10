@@ -37,7 +37,9 @@
 	},
 	"lint-staged": {
 		"pre-commit": [
-			"yarn lint && yarn test && git add ."
+			"yarn lint",
+			"yarn test",
+			"git add ."
 		]
 	}
 }
