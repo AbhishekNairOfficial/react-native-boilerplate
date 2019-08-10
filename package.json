@@ -24,7 +24,7 @@
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-prettier": "^3.1.0",
 		"eslint-plugin-react": "^7.14.3",
-		"husky": "0.14.3",
+		"husky": "^3.0.3",
 		"jest": "^24.8.0",
 		"lint-staged": "^9.2.1",
 		"metro-react-native-babel-preset": "^0.55.0",
@@ -35,11 +35,9 @@
 	"jest": {
 		"preset": "react-native"
 	},
-	"lint-staged": {
-		"pre-commit": [
-			"yarn lint",
-			"yarn test",
-			"git add ."
-		]
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn lint && yarn test && git add ."
+		}
 	}
 }
