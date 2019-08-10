@@ -1,6 +1,6 @@
 {
-	"name": "Boilerplate",
-	"version": "0.0.1",
+	"name": "react-native-boilerplate",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"start": "react-native start",
